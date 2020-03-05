@@ -94,10 +94,18 @@ def main_8():
     for x in range (-10,10,1):
         if x % 2 == 1:
             arr_positive.append(x)
+
     print(arr_positive)
 
-
+def main_9():
+    values = []
+    start = 1;
+    end = 10;
+    for i in range(start, end):
+        value = int(input("Enter int value - "+"["+str(i)+"/"+str(end)+")] "))
+        values.append(value)
+    print(values)
 
 if __name__ == "__main__":
     # main()
-    main_8()
+    main_9()
