@@ -48,8 +48,28 @@ def main_5 ():
     for x in sort_arr:
             print(x, end=", ")
 
-def main_6 ():
+def main_7 ():
     import random
+
+    a = []
+    for i in range(10):
+        a.append(i, end-'')
+
+    print(a)
+
+    even = 0
+    odd = 0
+
+    for i in a:
+        if i % 2 == 0:
+            even += 1
+        else:
+            odd += 1
+    print("Even:", even)
+    print("Odd:", odd)
+
+def main_6 ():
+    #import random
 
     a = []
     for i in range(10):
@@ -69,6 +89,15 @@ def main_6 ():
     print("Even:", even)
     print("Odd:", odd)
 
+def main_8():
+    arr_positive = []
+    for x in range (-10,10,1):
+        if x % 2 == 1:
+            arr_positive.append(x)
+    print(arr_positive)
+
+
+
 if __name__ == "__main__":
     # main()
-    main_6()
+    main_8()
