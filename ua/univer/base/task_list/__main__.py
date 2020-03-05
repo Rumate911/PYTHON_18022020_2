@@ -98,13 +98,19 @@ def main_8():
     print(arr_positive)
 
 def main_9():
-    values = []
+    values_even = []
+    values_odd = []
     start = 1;
     end = 10;
-    for i in range(start, end):
-        value = int(input("Enter int value - "+"["+str(i)+"/"+str(end)+")] "))
-        values.append(value)
-    print(values)
+    for i in range(start, end+1):
+        # value = int(input("Enter int value - "+"["+str(i)+"/"+str(end)+")] "))
+        value = int(input(f"Enter int value [{i}/{end}] "))
+        if value % 2 == 0:
+            values_even.append(value)
+        else:
+            values_odd.append(value)
+    print("Even num - ", values_even)
+    print("Odd num - ", values_odd)
 
 if __name__ == "__main__":
     # main()
